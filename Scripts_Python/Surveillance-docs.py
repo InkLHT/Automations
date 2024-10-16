@@ -1,14 +1,16 @@
 # -*- coding: utf-8 -*-
+# Permet d'afficher correctement les é, à etc.
+
 import os
 import shutil
 import time
-from tqdm import tqdm  # Barre de progression
+from tqdm import tqdm
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
 # Chemins des dossiers
-DOSSIER_A_SURVEILLER = r"C:\Users\Manel\OneDrive\Belgeler"
-DOSSIER_LOGS = r"C:\Users\Manel\OneDrive\Bureau\Automatisation"
+DOSSIER_A_SURVEILLER = r"C:\Users\TON_CHEMIN\"
+DOSSIER_LOGS = r"C:\Users\TON_CHEMIN\"
 DOSSIER_SANS_NOM = os.path.join(DOSSIER_A_SURVEILLER, "Sans nom")
 DOSSIER_PID = os.path.join(DOSSIER_LOGS, "Logs_PID")  # Dossier logs
 
@@ -17,20 +19,20 @@ def barre_de_chargement(duree, message):
     for _ in tqdm(range(duree), desc=message, ncols=100, ascii=True):
         time.sleep(1)
 
-
+# Creaction des dossiers logs et sans nom avec barre de progression de 5s
 def creation_dossier_logs():
     if not os.path.exists(DOSSIER_PID):
-        barre_de_chargement(5, "Création du dossier 'Logs_PID'")  # Barre de progression de 5 secondes
+        barre_de_chargement(5, "Création du dossier 'Logs_PID'")
         os.makedirs(DOSSIER_PID)
-        print(f"Dossier '{DOSSIER_PID}' créé avec succès.")
+        print(f"Dossier '{DOSSIER_PID}' créé avec succès mon brave.")
     else:
-        print(f"Le dossier '{DOSSIER_PID}' existe déjà.")
+        print(f"Le dossier '{DOSSIER_PID}' existe déjà...")
 
 def creation_dossier_sans_nom():
     if not os.path.exists(DOSSIER_SANS_NOM):
-        barre_de_chargement(5, "Création du dossier 'Sans nom'")  # Barre de progression de 5 secondes
+        barre_de_chargement(5, "Création du dossier 'Sans nom'") 
         os.makedirs(DOSSIER_SANS_NOM)
-        print(f"Dossier '{DOSSIER_SANS_NOM}' créé avec succès.")
+        print(f"Dossier '{DOSSIER_SANS_NOM}' créé avec succès, mon roi.")
     else:
         print(f"Le dossier '{DOSSIER_SANS_NOM}' existe déjà.")
 
@@ -75,7 +77,7 @@ try:
     
     # Boucle infinie pour la surveillance et vérification des dossiers
     while True:
-        time.sleep(300) #5min
+        time.sleep(300) #Pause de 5min
         # Vérifier que les dossiers existent toujours
         if not os.path.exists(DOSSIER_PID) or not os.path.exists(DOSSIER_SANS_NOM):
             print("Erreur : Les dossiers 'Logs_PID' ou 'Sans nom' n'existent plus. Arrêt de l'automatisation.")
