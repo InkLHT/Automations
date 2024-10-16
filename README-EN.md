@@ -31,12 +31,12 @@ python --version
 ```
 
 ### 2. Python libraries
-To use the script, you need to install the `watchdog` and `tqdm` Python libraries to display the progress bars and to monitor the file system. If you haven't yet installed these libraries, you can do it by running the following command in a text editor of your choice (in my case, Visual Studio Code):
+To use the script, you need to install the `watchdog` and `tqdm` Python libraries. If you haven't yet installed these libraries, you can do it by running the following command in a text editor of your choice (in my case, Visual Studio Code):
 ```bash
 pip install watchdog tqdm
 ```
 
 ### 3. System permissions
 On some operating systems, you may need to run the script with elevated privileges (as administrator or with sudo on Linux). The script needs permissions to:
-- Read and write to the folders defined by `DOSSIER_A_SURVEILLER` (folder to watch after) and `DOSSIERS_LOGS` (logs folder).
+- Read and write to the folders defined by `DOSSIER_A_SURVEILLER` and `DOSSIERS_LOGS`.
 - Create or move files in the folders.
