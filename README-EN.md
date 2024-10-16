@@ -1,4 +1,4 @@
-> *This code probably contains many errors, but it's just for testing and fun! It's just a base that will be improved in the future. Others can use it as a starting point and make improvements as well. It likely contains errors, so feel free to contribute and suggest improvements.*
+> *This code probably contains many errors, but it's just for testing and fun! It's just a base that will be improved in the future. Others can use it as a starting point and make improvements as well. It likely contains errors, so feel free to contribute and suggest improvements. :)*
 
 # Files Monitoring in Python
 The purpose of this Python script is to monitor a given folder and automate certain actions, like moving files based on their type or name. The script uses watchdog to detect any changes in the folder in real time, and it automatically organizes unclassified files into a subfolder.
