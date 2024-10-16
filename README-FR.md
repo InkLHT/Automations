@@ -25,4 +25,18 @@ Le script peut fonctionner sur Windows et Linux/macOS ! Il suffit simplement d'a
 
 # Prérequis
 ### 1. Python 3 ou plus
-Assurez-vous que Python 3 ou plus est installé sur votre système. Vous pouvez télécharger Python depuis leur site officiel. Pour vérifier si Python est déjà installé, ouvrez un terminal ou une invite de commandes (cmd) et exécutez :
+Assurez-vous que **Python 3 ou plus** est installé sur votre système. Vous pouvez télécharger Python depuis leur site officiel. Pour vérifier si Python est déjà installé, ouvrez un terminal ou une invite de commandes (cmd) et exécutez :
+```bash
+python --version
+```
+
+### 2. Bibliothèques Python
+Pour utiliser le script, vous devez installer les bibliothèques Python `watchdog` et `tqdm`, vous pouvez le faire en exécutant la commande suivante dans un éditeur de texte de votre choix (dans mon cas, Visual Studio Code) :
+```bash
+pip install watchdog tqdm
+```
+
+### 3. Permissions du système
+Sur certains systèmes d'exploitation, vous devrez peut-être exécuter le script avec des privilèges élevés (en tant qu'administrateur ou avec sudo sur Linux). Le script a besoin des permissions suivantes :
+- Lire et écrire dans les dossiers définis par `DOSSIER_A_SURVEILLER` et `DOSSIERS_LOGS`.
+- Créer ou déplacer des fichiers dans les dossiers.
