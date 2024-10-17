@@ -1,4 +1,4 @@
-> *Ce code contient probablement des erreurs, mais il est simplement à des fins de test et de fun ! Il n'est qu'une base qui sera améliorée à l'avenir. Les autres peuvent l'utiliser comme point de départ et l'améliorer également. Il contient sûrement des erreurs, donc n'hésitez pas à contribuer et à proposer des améliorations. :)*
+> *Ce code contient probablement des erreurs, mais il est simplement à des fins de test et de fun ! Il n'est qu'une base qui sera améliorée à l'avenir. Les autres peuvent l'utiliser comme point de départ et l'améliorer également. Donc, n'hésitez pas à contribuer et à proposer des améliorations. :)*
 # Surveillance de Fichiers en Python
 L'objectif de ce script Python est de surveiller un dossier donné et d'automatiser certaines actions, comme déplacer des fichiers en fonction de leur type ou de leur nom. Le script utilise watchdog pour détecter en temps réel tout changement dans le dossier, et il organise automatiquement les fichiers non classés dans un sous-dossier.
 
